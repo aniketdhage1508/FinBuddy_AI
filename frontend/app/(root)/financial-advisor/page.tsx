@@ -29,7 +29,7 @@ const Chatbot = () => {
     setInput("");
 
     try {
-      const response = await axios.post("http://localhost:8000/chat", { question: input });
+      const response = await axios.post("http://127.0.0.1:8000/chat", { question: input });
       const botMessage: Message = { role: "bot", text: response.data.response };
       setMessages((prev) => [...prev, botMessage]);
     } catch (error) {

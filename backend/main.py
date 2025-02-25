@@ -10,7 +10,7 @@ app = FastAPI()
 # ✅ Fix: Enable CORS for Frontend Communication
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],  # Replace "*" with ["http://localhost:3000"] for security
+    allow_origins=["http://localhost:3000"],  # Replace "*" with ["http://localhost:3000"] for security
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],

@@ -20,14 +20,19 @@ export const sidebarLinks = [
     label: "Transfer Funds",
   },
   {
-    imgURL: "/icons/money-send.svg",
+    imgURL: "/icons/fraud-detection.svg",
     route: "/fraud_detection",
     label: "Fraud Detection",
   },
   {
-    imgURL: "/icons/money-send.svg",
+    imgURL: "/icons/financial-advisor.svg",
     route: "/financial-advisor",
     label: "Financial Advisor",
+  },
+  {
+    imgURL: "/icons/salary-distribution.svg",
+    route: "/salary-distribution",
+    label: "Salary Distribution",
   },
 ];
 
