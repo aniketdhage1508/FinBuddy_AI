@@ -9,7 +9,7 @@ import uvicorn
 # Load API key
 load_dotenv()
 # API_KEY = os.getenv("GEMINI_API_KEY")
-API_KEY="AIzaSyALlI1Gjd_NwD0dGPZo280IKGi1f_ZrGXE"
+API_KEY="AIzaSyBB_cSEI3KBdEgu0y8qQMkeyr0bo-1Qi3Y"
 
 if not API_KEY:
     raise RuntimeError("❌ Gemini API key not found! Please add it to your .env file.")
@@ -40,7 +40,7 @@ class Query(BaseModel):
 async def chat(query: Query):
     """Handles user queries and returns Gemini's response."""
     try:
-        model = genai.GenerativeModel("gemini-pro")
+        model = genai.GenerativeModel("gemini-2.0-flash")
         response = model.generate_content(SYSTEM_PROMPT + "\nUser: " + query.question)
         return {"response": response.text.strip()}
     except Exception as e:
@@ -51,4 +51,4 @@ async def home():
     return {"message": "🚀 Financial Chatbot API is running!"}
 
 if __name__ == "__main__":
-    uvicorn.run(app, host="0.0.0.0", port=5000)
+    uvicorn.run(app, host="0.0.0.0", port=3000)
