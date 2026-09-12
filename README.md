@@ -50,7 +50,7 @@ Seamlessly integrates with multiple banks to fetch and analyze transaction data 
 | **Database**       | PostgreSQL, MongoDB |
 | **ML & GenAI**     | Python, TensorFlow, Scikit-learn |
 | **Authentication** | OAuth 2.0, JWT |
-| **Bank API Integration** | Plaid, Yodlee, Open Banking APIs |
+| **Bank API Integration** | Plaid, Dwolla, Open Banking APIs |
 | **Deployment** | AWS, Docker, Kubernetes |
 
 ---
